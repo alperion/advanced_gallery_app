@@ -1,5 +1,5 @@
 import 'package:flutter/material.dart';
-import 'package:hyperion/categoriesphoto.dart';
+import 'categoriesphoto.dart';
 
 import 'categories.dart';
 
