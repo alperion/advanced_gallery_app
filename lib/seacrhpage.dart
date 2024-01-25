@@ -25,7 +25,7 @@ class _SearchPageState extends State<SearchPage> {
         Uri.parse("https://api.pexels.com/v1/search?query=$query&per_page=80"),
         headers: {
           "Authorization":
-              "563492ad6f917000010000012009e4b2e6da419094353041d33d4fa2"
+              ""
         }).then((value) {
       Map result = jsonDecode(value.body);
       if (result["photos"] == null) {
@@ -51,7 +51,7 @@ class _SearchPageState extends State<SearchPage> {
 
     await http.get(Uri.parse(newnextpageurl), headers: {
       "Authorization":
-          "563492ad6f917000010000012009e4b2e6da419094353041d33d4fa2"
+          ""
     }).then((value) {
       Map photoresultss = jsonDecode(value.body);
 
